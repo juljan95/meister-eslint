@@ -29,8 +29,10 @@ ruleTester.run("method-chaining", rule, {
         "test = nope ? Test.is().this().a().error() : itShouldNot;",
         "test = nope ? itShouldNot  : Test.is().this().a().error();",
 
+
         // If conditions as well
-        "if(Test.am().i().an().error()){ console.log(test)}"
+        "if(Test.am().i().an().error()){ console.log(test)}",
+        "if(top.test().map().isJust()){ something} else if(top.test().map().isJust()){}"
 
         // give me some code that won't trigger a warning
     ],
