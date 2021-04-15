@@ -282,5 +282,6 @@
     "wrap-iife": "layout",
     "wrap-regex": "layout",
     "yield-star-spacing": "layout",
-    "yoda": "suggestion"
+    "yoda": "suggestion",
+    "julian-method-member-chaining": "suggestion"
 }
