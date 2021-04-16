@@ -44,7 +44,7 @@ ruleTester.run("method-chaining", rule, {
             errors: [{
                 messageId: "expected",
                 data: {
-                    callText: "value()",
+                    callText: "map()",
                     chainings: 3,
                     nodeCode: "Test.map().filter().value()"
                 }
@@ -60,7 +60,7 @@ ruleTester.run("method-chaining", rule, {
             {
                 messageId: "expected",
                 data: {
-                    callText: "map()",
+                    callText: "value()",
                     chainings: 3,
                     nodeCode: "Test.map().filter().value()"
                 }
@@ -72,7 +72,7 @@ ruleTester.run("method-chaining", rule, {
             errors: [{
                 messageId: "expected",
                 data: {
-                    callText: "log()",
+                    callText: "filter()",
                     chainings: 3,
                     nodeCode: "Test.map.filter().value().log()"
                 }
@@ -87,7 +87,7 @@ ruleTester.run("method-chaining", rule, {
             {
                 messageId: "expected",
                 data: {
-                    callText: "filter()",
+                    callText: "log()",
                     chainings: 3,
                     nodeCode: "Test.map.filter().value().log()"
                 }
@@ -99,7 +99,7 @@ ruleTester.run("method-chaining", rule, {
             errors: [{
                 messageId: "expected",
                 data: {
-                    callText: "value()",
+                    callText: "filter()",
                     chainings: 3,
                     nodeCode: "Test\n.map().filter().value()"
                 }
@@ -107,7 +107,7 @@ ruleTester.run("method-chaining", rule, {
             {
                 messageId: "expected",
                 data: {
-                    callText: "filter()",
+                    callText: "value()",
                     chainings: 3,
                     nodeCode: "Test\n.map().filter().value()"
                 }
